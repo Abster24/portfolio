@@ -8,7 +8,7 @@
 
 .wdxl-lubrifont {
   font-family: "WDXL Lubrifont TC", sans-serif;
-  font-weight: 350;
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -69,7 +69,35 @@ body {
 
 .main {
     background-color: var(--misty-rose);
-    padding: 20px;
+    padding: 25px;
     text-align: center;
+}
+
+.about-content {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+
+.page-header {
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+
+#about-me {
+    display: grid;
+}
+
+#about-header {
+    margin-bottom: 20px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#item3 {
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
 
