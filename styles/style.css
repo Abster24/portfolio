@@ -8,7 +8,7 @@
 
 .wdxl-lubrifont {
   font-family: "WDXL Lubrifont TC", sans-serif;
-  font-weight: 300;
+  font-weight: 200;
   font-style: normal;
 }
 
@@ -85,6 +85,23 @@ body {
     margin-bottom: 30px;
 }
 
+.infodiv {
+    background-color: var(--lavender-web);
+    padding: 20px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 2px solid var(--cool-gray);
+}
+
+.project {
+    width: 60%;
+}
+
+.project-image {
+    width: 100%;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
 
 #about-me {
     display: grid;
@@ -96,8 +113,33 @@ body {
     grid-column-end: 4;
 }
 
+#projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+#project1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+#project2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
 #item3 {
     grid-column-start: 1;
     grid-column-end: 4;
+    margin: 0px 50px;
 }
 
+
+@media screen and (max-width: 800px) {
+    #about-me {
+        display: block;
+    }
+    #item3 {
+        margin: 5px;
+    }
+}
